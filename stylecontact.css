@@ -1,0 +1,311 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffefe;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 150px;
+  margin-left: 0; 
+}
+
+.navLinks ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.navLinks ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navLinks ul li:hover > a {
+  background-color: #ffcc00;
+}
+
+.navLinks ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  display: none;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.navLinks ul li:hover ul {
+  display: block;
+}
+
+.navLinks ul li ul li a {
+  padding: 10px 20px;
+}
+
+.navLinks ul li ul li ul {
+  left: 100%;
+  top: 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons span {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+}
+
+.icons .cart img {
+  width: 25px;
+}
+
+.icons .cart {
+  position: relative;
+}
+
+.icons .cart::after {
+  content: '0';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: #000;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.cart img {
+  vertical-align: middle;
+}
+
+h4 {
+  margin-left: 15px;
+  font-weight: lighter;
+}
+
+span {
+  color: #777;
+}
+
+.content {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.contactUsPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.contactContent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+.contactText {
+  flex: 1;
+  color: #333;
+}
+
+.contactText .breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.contactText h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contactText h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.p1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 120px;
+  line-height: 1.6;
+}
+
+.officeAddress {
+  margin-top: 30px;
+}
+
+.officeAddress h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.officeAddress2 {
+  margin-top: 120px;
+}
+
+.contactImage {
+  flex: 1;
+}
+
+.contactImage img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.socialIcons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.socialIcons a i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.socialIcons a:hover {
+  background-color: #ffcc00;
+}
+
+footer {
+  background-color: #a7a3a37e;
+  width: 100%;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.footerContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topCategoriesTitle {
+  text-align: center;
+  margin: 0 0 30px 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.contentContainerF {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logoTextSectionF {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+  margin-right: 160px;
+  max-width: 60%;
+}
+
+.logoTextSectionF .logo3 {
+  margin-bottom: 10px;
+}
+
+.copyr {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.logo3 {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.textSectionF {
+  align-items: flex-start;
+  max-width: 800px;
+}
+
+.categoriesSectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1.5;
+}
+
+.categoriesSection {
+  text-align: left;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.categoriesSection ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoriesSection ul li {
+  line-height: 2.2;
+  margin-bottom: 10px;
+}
+
+.categoriesSection ul li:hover {
+  cursor: pointer;
+}
